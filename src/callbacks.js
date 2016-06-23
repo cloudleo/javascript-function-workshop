@@ -9,6 +9,7 @@
 each = function(collection, iterator) {
 
   for(var i in collection){
+    //debugger
   	if(!isNaN(i)){ i = +i;}else if(i.length > 1){break;};
     iterator(collection[i],i,collection);
     }
